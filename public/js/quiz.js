@@ -17,9 +17,11 @@
 		$scope.selectAnswer = function (qIndex,aIndex) {
 			var questionState = $scope.myQuestions[qIndex].questionState;
 
+//to check whether a question is answered or not
 			if (questionState != 'answered') {
 				$scope.myQuestions[qIndex].selectedAnswer = aIndex;
 				var correctAnswer = $scope.myQuestions[qIndex].correct;
+				$scope.myQuestions[qIndex].correctAnswer = correctAnswer;
 
 				if (aIndex === correctAnswer) {
 					$scope.myQuestions[qIndex].correctness = 'correct';
@@ -31,9 +33,17 @@
 				$scope.myQuestions[qIndex].questionState = 'answered';
 
 			}
-		};
+		}; //end of selectAnswer() function
 
-  }]);
+$scope.isSelected = function (qIndex,aIndex) {
+	return $scope.myQuestions[qIndex].selectedAnswer === aIndex;
+};
+
+$scope.isCorrect = function (qIndex,aIndex) {
+	return $scope.myQuestions[qIndex].correctAnswer === aIndex;
+};
+
+  }]); //end of controller
 
 
 
