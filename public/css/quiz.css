@@ -183,7 +183,7 @@ body { background-color: #fff; padding: 20px; }
   padding: 0;
   background-repeat: no-repeat;
   background-position: 0 0;
-  
+
 }
 
 /* feedback */
@@ -247,10 +247,11 @@ background-size: 25px 25px;
   transition: left 1.5s ease-in-out;
 }
 
+
 #myQuiz .active{
   left:40px;
 }
-
-#myQuiz .intro.inactive, #myQuiz.inactive.answered{
+/* missed space below*/
+#myQuiz .intro.inactive, #myQuiz .inactive.answered{
   left: -1350px;
 }
