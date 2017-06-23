@@ -58,7 +58,7 @@ $scope.createShareLinks = function (percentage) {
 	'% on this quiz about Saturn. Try to beat my score at '+
 	url +
 	' ">Email a friend</a>';
-	var twitterLink = '<a class="btn twitter" target=_blank href="http://twitter.com/share?text=I scored a '
+	var twitterLink = '<a class="btn twitter" target="_blank" href="http://twitter.com/share?text=I scored a '
 	+ percentage +
 	'% on this quiz about Saturn. Try to beat my score at &amp;hashtags=SaturnQuiz &amp;url='
 	+ url
